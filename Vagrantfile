@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "archlinux/archlinux"
-   config.vm.synced_folder "/vagrant", ".", disabled: true
+  #config.vm.synced_folder "/vagrant", ".", disabled: true
   config.vm.provider :libvirt do |libvirt|
     libvirt.qemuargs(value: '--no-kvm')
     libvirt.driver = 'qemu'
