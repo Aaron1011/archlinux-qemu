@@ -1,0 +1,3 @@
+language: minimal
+install: ci/install.sh
+script: ci/run.sh
