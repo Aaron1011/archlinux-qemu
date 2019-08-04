@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  vagrant_temp:
+    container_name: ubuntu-vagrant
+    # First build the image from the Dockerfile
+    build:
+      # Change this to where you keep above Dockerfile
+      context: .
+    image: "ubuntu-vagrant:latest"
+
+    # Then start a container from the just built image in privileged mode to finish what's left
+    entrypoint: bash /do_vagrant_build.sh
+    privileged: true
