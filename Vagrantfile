@@ -14,7 +14,10 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "archlinux/archlinux"
+
+  config.vm.box = "newarch3"
+  #config.vm.box = "archlinux/archlinux"
+  #config.vm.box = "custom-arch2"
   #config.vm.synced_folder "/vagrant", ".", disabled: true
   config.vm.provider :libvirt do |libvirt|
     libvirt.qemuargs(value: '--no-kvm')
