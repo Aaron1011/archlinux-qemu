@@ -1,6 +1,6 @@
 set -xe
 docker pull aaron1011/arch-docker
-docker run --privileged -it final-ubuntu-vagrant 'uname -a'
+docker run --privileged -it aaron1011/arch-docker 'uname -a'
 
 #sudo chown -R 777 /var/run/libvirt/ # It's CI - who cares about perms?
 #newgrp libvirt
