@@ -1,4 +1,5 @@
 set -xe
+sudo depmod
 docker pull aaron1011/arch-docker
 docker run --privileged -it aaron1011/arch-docker 'uname -a'
 
